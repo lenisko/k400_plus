@@ -1,0 +1,2 @@
+# udev rule for K400 Plus to set wake-up on selected devices
+SUBSYSTEM=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c52b" RUN+="/usr/local/sbin/enable-wakeup $env{DEVPATH}"
