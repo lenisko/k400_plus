@@ -72,7 +72,7 @@ int main(int argc, char** argv) {
                "   Path to hidraw device. Determine by e.g.:\n"
                "     ls /sys/class/hidraw/hidraw*/device/uevent\n"
                "   and/or\n"
-               "     cat /sys/class/hidraw/hidraw*/device/uevent\n");
+               "     cat /sys/class/hidraw/hidraw*/device/uevent\n"
                "-f <on|off>\n"
                "   To enable direct access to F-keys.\n\n");
     }
