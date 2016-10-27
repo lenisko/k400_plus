@@ -1,4 +1,4 @@
-﻿#K400 Plus - Linux helper scripts
+﻿#Logitech K400 Plus - Linux helper scripts
 
 ###1. Script for Fn keys switch
 
@@ -16,7 +16,6 @@ We need `enable-wakeup` under `/usr/local/sbin/enable-wakeup` so just follow tut
 ###3. udev rules
 
 ####3.1 Auto enable (normal) fn keys for keyboard
-You might need to fix ids
 ```
 curl https://raw.githubusercontent.com/lenisko/k400_plus/master/90-k400-plus-set-fn-keys.rules > /etc/udev/rules.d/90-k400-plus-set-fn-keys.rules
 udevadm control --reload-rules
