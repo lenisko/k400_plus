@@ -1,2 +1,0 @@
-# udev rule for K400 Plus keyboard to set fn keys
-ACTION=="add", KERNEL=="hidraw*", SUBSYSTEM=="hidraw", RUN+="/usr/local/sbin/k400_plus_conf -d $env{DEVNAME} -f on"

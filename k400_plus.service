@@ -1,0 +1,9 @@
+[Unit]
+Description=K400 Plus - normal Fn functioning
+After=suspend.target hibernate.target
+
+[Service]
+ExecStart=/usr/local/sbin/k400_plus_conf -d /dev/hidraw2 -f on
+
+[Install]
+WantedBy=suspend.target hibernate.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=K400 Plus - normal Fn functioning timer
+
+[Timer]
+OnBootSec=60
+Unit=k400_plus.service
+
+[Install]
+WantedBy=multi-user.target
