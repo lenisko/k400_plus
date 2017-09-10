@@ -2,6 +2,8 @@
 
 This repository is targeting Logitech K400 Plus keyboard and common issue with switching to normal Fn functioning. You can find an C code which was rewritten a little for this devices purpose. I wasn't able to create "nice" solution to catch only this device upon a start, isntead I'm pointing stirght to /dev/hidraw* device, in my case /dev/hidraw2. Feel free to create issue with other solutions.
 
+Edit: Looks like [Solaar](https://github.com/pwr/Solaar) (git version) is now supporting Fn swap in options for K400 Plus which is great, but after wake-up it's still messed up so I'm leaving this repo anyway.
+
 ### 1. Script used to switch Fn functioning back to normal
 
 __k400_plus_conf.c__ is modded version of [k810_conf.c](http://www.trial-n-error.de/posts/2012/12/31/logitech-k810-keyboard-configurator).
