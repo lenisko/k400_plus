@@ -9,8 +9,9 @@ Edit: Looks like [Solaar](https://github.com/pwr/Solaar) (git version) is now su
 __k400_plus_conf.c__ is modded version of [k810_conf.c](http://www.trial-n-error.de/posts/2012/12/31/logitech-k810-keyboard-configurator).
 ```
 curl https://raw.githubusercontent.com/lenisko/k400_plus/master/k400_plus_conf.c > /tmp/k400_plus_conf.c
-sudo gcc /tmp/k400_plus_conf.c -o /usr/local/sbin/k400_plus_conf
+gcc /tmp/k400_plus_conf.c -o /tmp/k400_plus_conf
 rm /tmp/k400_plus_conf.c
+sudo mv /tmp/k400_plus_conf /usr/local/sbin/k400_plus_conf
 sudo chmod +x /usr/local/sbin/k400_plus_conf
 ```
 
